@@ -18,7 +18,7 @@ def calculate_fare(km, type, hour):
 print("------- CityCab ride Estimate -------")
 
 time=int(input("Enter the ride hour of the day (0-23) : "))
-distance=random.randint(1, 50)
+distance=int(input("Enter the distance in km : "))
 print("Enter the type of vehicle from the available options")
 print(list(rates.keys()))
 
