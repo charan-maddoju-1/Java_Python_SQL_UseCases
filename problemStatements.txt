@@ -1,0 +1,60 @@
+Core Java: The "SafeLog" Password Validator
+
+Business Case: 
+A cybersecurity firm needs a tool for their "Employee Portal" that forces employees to create strong passwords. Standard "if-else" isn't enough; they need a modular approach.
+Problem Statement
+Build a Password Strength Checker that validates a string against corporate security policies and provides specific feedback on why a password failed.
+
+
+Student Tasks:
+1.	The Policy: The password must be:
+    ○	At least 8 characters long.
+    ○	Contain at least one Uppercase letter.
+    ○	Contain at least one Digit (0-9).
+2.	Looping Logic: Use a for loop to iterate through the string and Character.isUpperCase() / Character.isDigit() to check requirements.
+3.	Feedback System: Instead of just saying "Invalid," the program should print specifically: "Missing a digit" or "Too short."
+4.	Retry Mechanism: Use a while loop to keep asking the user for a password until they enter a valid one.
+
+Deliverable: 
+A single PasswordValidator.java file that demonstrates string manipulation and loop control.
+
+--------------------------------------------------------------------
+
+Core Python: The "FareCalc" Travel Optimizer
+
+Business Case: 
+A ride-sharing startup, "CityCab," needs a backend script to calculate fares. The fare isn't flat; it changes based on the time of day (Peak Hours) and the type of vehicle requested.
+Problem Statement
+
+Write a script that calculates the final "Ride Estimate" based on distance, vehicle type, and a "Surge Pricing" multiplier.
+
+Student Tasks:
+1.	Dictionary Mapping: Store rates in a dictionary: {'Economy': 10, 'Premium': 18, 'SUV': 25} (rates per km).
+2.	Surge Logic: Ask the user for the "Hour of Day" (0-23). If the hour is between 17 and 20 (5 PM - 8 PM), apply a 1.5x Surge Multiplier to the total.
+3.	Function Definition: Create a function calculate_fare(km, type, hour) that returns the final price.
+4.	Error Handling: If the user enters a vehicle type not in your dictionary, use a try-except block or an if-in check to provide a "Service Not Available" message.
+
+Deliverable: 
+A .py script that takes user input and prints a formatted "Price Receipt."
+
+---------------------------------------------------------------------
+
+SQL: The "E-Commerce Logistics" Tracker
+
+Business Case: 
+"SwiftShip" is a third-party logistics provider. They handle thousands of packages daily. Their current challenge is "Lost in Transit" items and identifying which delivery partners are underperforming.
+Problem Statement
+
+Create a tracking database that identifies delayed shipments and ranks delivery partners based on their "Success Rate."
+
+Student Tasks:
+1.	Schema Design: Create Partners, Shipments, and DeliveryLogs.
+2.	Delayed Shipment Query: Write a query to find all shipments where the ActualDeliveryDate is greater than the PromisedDate.
+3.	Performance Ranking: Use COUNT and GROUP BY to show how many "Successful" vs. "Returned" deliveries each Partner handled.
+4.	The "Zone" Filter: Identify the most popular "Destination City" for orders placed in the last 30 days to help the warehouse plan truck routes.
+
+Deliverable: 
+A SQL script that outputs a "Partner Scorecard" showing which company has the fewest delays.
+
+-------------------------------------------------------------------
+
